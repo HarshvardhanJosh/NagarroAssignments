@@ -5,6 +5,7 @@
     list-style: none;
     box-sizing: border-box;
     background-color: #FFCB05;
+    overflow-x: hidden !important;
 }
 .head-text{
     margin: 20px 0;
@@ -47,17 +48,18 @@ section{
     }
     .p-text{
         padding: 25px;
-        margin-right: 90px;
     }
     .main-img{
         margin-right: 200px;
     }
     .big-img{
-        width: 300px;
-        margin-right: 330px;
+        width: 400px;
     }
     .form-header{
         margin-bottom: 35px;
+    }
+    .vid-src{
+        width: 310px;
     }
     .gallery-btn{
         margin-bottom: 50px;
