@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    background-color: #FFCB05;
+}
+.head-text{
+    margin: 20px 0;
+    text-align: center;
+    font-size: 34px;
+}
+.pok-img{ 
+    display: block;
+    text-align: center;
+    margin: 30px auto;
+}
+section{
+    padding: 30px 1%;
+}
+.btn{
+    display: inline-block;
+    font-size: 1.1rem;
+    padding: 10px 30px;
+    background-color: #3466AF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.gallery-btn{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px !important;
+}
+.btn:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+@media only screen and (max-width: 600px) {
+    .head-text{
+        margin-right: 100px;
+    }
+    .pok-img{
+        margin-right: 50px;
+    }
+    .p-text{
+        padding: 25px;
+        margin-right: 90px;
+    }
+    .main-img{
+        margin-right: 200px;
+    }
+    .big-img{
+        width: 300px;
+        margin-right: 330px;
+    }
+    .form-header{
+        margin-bottom: 35px;
+    }
+    .gallery-btn{
+        margin-bottom: 50px;
+    }
+}
