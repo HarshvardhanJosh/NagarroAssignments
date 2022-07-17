@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    padding: 20px 0;
+    background-image: url('https://p.imgci.com/db/PICTURES/CMS/332100/332114.jpg');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+#api > h1 > span > p{
+    margin-top: 30px;
+    color: #000 !important;
+    font-weight: 700;
+}
+.card{
+    max-width: 800px;
+    width: 100%;
+    height: 25em;
+    transition: transform 0.5s;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.team-logo{
+    width: 30%;
+    min-width: 50px;
+    border-radius: 100%;
+}
+.score{
+    text-align: center;
+}
+.text2{
+    margin-top: -1.1rem;
+}
