@@ -19,18 +19,32 @@ overflow-x: hidden;
         }
         .btn{
             display: inline-block;
-            border-radius: 10px;
-            font-size: 1.1rem;
-            padding: 20px 30px;
-            background-color: #27ae60;
-            color: #fff;
+            padding: 15px;
+            margin-right: 5px;
+            height: 50px;
+            min-width: 100px;
+            background: #348AA7;
             border: none;
-            cursor: pointer;
-            margin-top: 20px;
+            outline: none;
+            color: white;
+            font-family: inherit;
+            font-weight: 400;
+            margin-top: 25px;
+            font-size: 20px;
+            border-radius: 3px;
+            box-shadow: 0 5px 0px darken(#348AA7,0%);
+            border-bottom: 2px solid darken(#348AA7,3%);
+        }
+        .btn:hover{
+                background: darken(#348AA7,5%);
+                box-shadow: 0 4px 1px darken(#348AA7,5%);
+                border-bottom: 2px solid darken(#348AA7,8%);
+                transition: all 0.1s ease-in;
         }
         .btn:active {
-            transform: scale(0.98);
-            box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+            transform:translateY(4px);
+    border-bottom-width: 2px;
+    box-shadow: none;
         }
         @media only screen and (max-width: 600px) {
             .container{
