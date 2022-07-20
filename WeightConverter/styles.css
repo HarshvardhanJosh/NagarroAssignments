@@ -1,0 +1,17 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top:100px;
+    color:#fff;
+    background: #23074d;  
+    background: -webkit-linear-gradient(to right, #cc5333, #23074d); 
+    background: linear-gradient(to right, #cc5333, #23074d); 
+
+}
+.card-color{
+    background-color: #302b63;
+border-color: #302b63;
+}
+.card-block{
+    margin-top: 12px;
+    margin-left: 10px;
+}
