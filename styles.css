@@ -1,53 +1,125 @@
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-}
-        body{
-            background: #232526;
-background: -webkit-linear-gradient(to left, #414345, #232526);  
-background: linear-gradient(to left, #414345, #232526); 
-overflow-x: hidden;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
 
-        }
-        .container{
-            margin-top: 30px;
-            text-align: center;
-            color: #fff;
-        }
-        .btn{
-            display: inline-block;
-            padding: 15px;
-            margin-right: 5px;
-            height: 50px;
-            min-width: 100px;
-            background: #348AA7;
-            border: none;
-            outline: none;
-            color: white;
-            font-family: inherit;
-            font-weight: 400;
-            margin-top: 25px;
-            font-size: 20px;
-            border-radius: 3px;
-            box-shadow: 0 5px 0px darken(#348AA7,0%);
-            border-bottom: 2px solid darken(#348AA7,3%);
-        }
-        .btn:hover{
-                background: darken(#348AA7,5%);
-                box-shadow: 0 4px 1px darken(#348AA7,5%);
-                border-bottom: 2px solid darken(#348AA7,8%);
-                transition: all 0.1s ease-in;
-        }
-        .btn:active {
-            transform:translateY(4px);
-    border-bottom-width: 2px;
-    box-shadow: none;
-        }
-        @media only screen and (max-width: 600px) {
-            .container{
-                margin-top: 60px !important;
-            }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
 }
+body{
+    overflow-x: hidden;
+    background: #2f363e;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list {
+  position: relative;
+  width: 550px;
+  min-height: 500px;
+  padding: 50px;
+  background: #2f363e;
+  box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+    10px 10px 70px rgba(0, 0, 0, 0.25),
+    inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+  border-radius: 30px;
+}
+.list h1,h2,h3 {
+    text-align: center;
+  color: #fff;
+  margin: 10px 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.list-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.list-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45px;
+  height: 45px;
+  background: #1f83f2;
+  border-radius: 22.5px;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+    inset 2px 2px 5px rgba(255, 255, 255, 0.5),
+    inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+
+.list-item:hover::before {
+  width: 100%;
+}
+
+.list-item .rank {
+  position: relative;
+  min-width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.list-item .rank::before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #2f363e;
+  border-radius: 30px;
+  transform: scale(0);
+  transition: 0.5s;
+}
+
+.list-item:hover .rank::before {
+  transform: scale(1);
+}
+
+.list-item .rank span {
+  position: relative;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.list-item .name {
+  position: relative;
+  line-height: 1.15rem;
+}
+
+.list-item .name a {
+  font-weight: 600;
+  color: #bcbcc0;
+  transition: 0.5s;
+  text-decoration:none;
+}
+.list-item:hover .name a{
+  color: #fff;
+}
+@media only screen and (max-width: 600px) {
+    .list h1,h2,h3{
+        font-size: 15px;
+    }
+    .list{
+        width: 310px;
+    }
+    }
